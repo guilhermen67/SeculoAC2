@@ -57,7 +57,7 @@ public class mov : MonoBehaviour
             groundLayer
         );
 
-        isGrounded = touchingGround && rb.velocity.y <= 0.05f;
+        isGrounded = touchingGround; //&& rb.velocity.y <= 0.05f;
 
         // Recupera os pulos somente ao aterrissar
         if (isGrounded && !wasGrounded)
